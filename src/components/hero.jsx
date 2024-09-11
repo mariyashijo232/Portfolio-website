@@ -3,6 +3,7 @@ import { HERO_CONTENT } from '../constants/index';
 import picture from "../assets/picture2.png";
 import { motion } from "framer-motion";
 import ThreeDScene from './ThreeDScene'; 
+
 const container = (delay) => ({
   hidden: { opacity: 0, y: 50 },
   visible: {
@@ -14,8 +15,8 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-<div className="relative h-screen flex flex-col items-center justify-center pt-12 lg:pt-0">
-<div className="absolute top-0 left-0 w-full h-full z-0">
+    <div className="relative min-h-screen flex flex-col items-center justify-center pt-12 lg:pt-0 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full z-0">
         <ThreeDScene />
       </div>
 
@@ -34,23 +35,23 @@ const Hero = () => {
           animate="visible"
           className="flex flex-col lg:flex-row lg:items-center lg:justify-between w-full max-w-7xl px-4 lg:px-6"
         >
-          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left lg:pr-8 mt-[-5vh] lg:mt-0">
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left lg:pr-8">
             <motion.h1
               variants={container(0)}
               whileHover={{ scale: 1.1, rotate: 2 }}
-              className="pb-4 text-6xl lg:text-8xl font-bold leading-tight tracking-tight"
+              className="pb-4 text-4xl lg:text-6xl xl:text-8xl font-bold leading-tight tracking-tight"
             >
               Mariya Shijo
             </motion.h1>
             <motion.span
               variants={container(0.5)}
-              className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-4xl font-extrabold text-transparent"
+              className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 bg-clip-text text-2xl lg:text-4xl xl:text-5xl font-extrabold text-transparent"
             >
               Web Developer
             </motion.span>
             <motion.p
               variants={container(1)}
-              className="my-4 max-w-xl lg:max-w-2xl py-6 text-lg text-light lg:text-xl font-light"
+              className="my-4 max-w-xl lg:max-w-2xl py-6 text-base lg:text-lg xl:text-xl font-light"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -71,6 +72,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
     </div>
+    
   );
 };
 

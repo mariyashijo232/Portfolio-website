@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative mb-4 flex items-center justify-between py-4 px-4 sm:px-8 shadow-md">
+    <nav className="relative mb-4 flex items-center justify-between py-4 px-4 sm:px-8 shadow-md z-50">
       <div className="flex items-center mb-4 sm:mb-0">
         <img className="w-12 sm:w-16" src={logo} alt="logo" />
       </div>
@@ -21,8 +21,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className={`fixed inset-y-0 left-0 w-64 bg-black bg-opacity-75 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 z-40`}>
-        <div className="flex flex-col items-start p-6">
+      <div className={`fixed inset-0 bg-black bg-opacity-75 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} z-40`}>
+        <div className="flex flex-col items-start p-6 h-full">
           <button onClick={toggleMenu} className="text-white text-3xl mb-8">
             <FaTimes />
           </button>
@@ -47,7 +47,6 @@ const Navbar = () => {
                 Contact
               </span>
             </a>
-            {/* Additional Menu Items */}
             <a href="#blog" className="relative group">
               <span className="relative group-hover:text-transparent bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text">
                 Blog
