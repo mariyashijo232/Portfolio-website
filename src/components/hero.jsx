@@ -39,7 +39,7 @@ const Hero = () => {
             <motion.h1
               variants={container(0)}
               whileHover={{ scale: 1.1, rotate: 2 }}
-              className="pb-4 text-4xl lg:text-6xl xl:text-8xl font-bold leading-tight tracking-tight"
+              className="pb-4 text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight"
             >
               Mariya Shijo
             </motion.h1>

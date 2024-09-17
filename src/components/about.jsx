@@ -23,7 +23,7 @@ const About = () => {
           variants={container(0)}
           initial="hidden"
           animate="visible"
-          className="w-full max-w-4xl bg-white bg-opacity-10 rounded-lg shadow-lg p-8 border border-gray-700"
+          className="w-full max-w-4xl bg-white bg-opacity-10 rounded-lg shadow-lg p-8 border border-gray-700 flex flex-col items-center"
         >
           <motion.h1
             className="text-center text-4xl lg:text-5xl font-bold text-white"
@@ -33,28 +33,26 @@ const About = () => {
           >
             About Me
           </motion.h1>
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-8 mt-8">
+          <div className="flex flex-col items-center lg:flex-row lg:items-start gap-8 mt-8">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 flex justify-center"
             >
-              <div className="flex justify-center">
-                <img
-                  src={picture}
-                  alt="Mariya Shijo"
-                  className="rounded-lg w-full h-auto max-w-md border-4 border-gray-700 shadow-lg"
-                />
-              </div>
+              <img
+                src={picture}
+                alt="Mariya Shijo"
+                className="rounded-lg w-full h-auto max-w-md border-4 border-gray-700 shadow-lg"
+              />
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 flex justify-center"
             >
-              <motion.p className="my-4 lg:my-6 max-w-xl lg:max-w-2xl text-lg font-light lg:text-xl text-gray-200 leading-relaxed">
+              <motion.p className="my-4 lg:my-6 max-w-xl lg:max-w-2xl text-lg font-light lg:text-xl text-gray-200 leading-relaxed text-center">
                 {ABOUT_TEXT.split(" ").map((word, index) => {
                   const isHighlighted = highlightedWords.includes(word);
                   return (

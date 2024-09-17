@@ -14,13 +14,20 @@ export const ABOUT_TEXT = `As a hardworking and resourceful individual, I thrive
 export const EXPERIENCES = [
   {
     year: "2024 - Present",
+    role: "Freelance Front-End Web Developer",
+    company: "Glazed",
+    description: `Currently working on developing responsive and visually engaging web applications. Collaborating with designers to implement Figma designs into interactive ReactJS components, while refining layouts and styles using Tailwind. Actively involved in optimizing user experience and ensuring cross-browser compatibility.`,
+    technologies: ["Figma", "ReactJS", "Tailwind"],
+  },
+  {
+    year: "2024 - Present",
     role: "Tutor",
     company: "Varsity Tutors",
     description: `Tailored tutoring sessions to accommodate diverse learning styles, ensuring comprehension and retention of geometric concepts. Utilized creative teaching methods to make abstract geometric concepts more accessible.`,
     technologies: ["Geometry", "Tutoring", "Education"],
   },
   {
-    year: "2023 - Present",
+    year: "2023 - 2024",
     role: "Junior Videographer",
     company: "Twilight Media",
     description: `•	Traveled to cover live conventions, providing photography and videography services.
@@ -52,18 +59,11 @@ export const PROJECTS = [
   },
 
   {
-    title: "Fable & Fern - 2024",
-    image: project5,
-    description:
-      "o	Built a full-stack bookstore website featuring dynamic content, user login/signup, personalized book recommendations based on user survey responses, and a responsive design for an enhanced user experience",
-    technologies: ["ReactJS", "MongoDB", "NodeJS" ],
-  },
-  {
-    title: "Lexical Analyzer - 2023",
+    title: "Glazed - 2024",
     image: project2,
-    description:
-      "A C++ project that identifies and categorizes tokens in input code for processing in a compiler or interpreter.",
-    technologies: ["C++", "Lexical Analysis", "Compiler Design"],
+    description: "A freelance front-end web development project for a client, focused on building responsive and user-friendly web applications using ReactJS and Tailwind. Currently collaborating with designers to implement Figma designs and optimize user experience.",
+    technologies: ["Figma", "ReactJS", "Tailwind"],
+    
   },
 
   {
