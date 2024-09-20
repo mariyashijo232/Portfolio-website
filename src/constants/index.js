@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.jpg";
+import star from "../assets/projects/star.jpg";
 
 
 
@@ -15,7 +16,7 @@ export const EXPERIENCES = [
   {
     year: "2024 - Present",
     role: "Freelance Front-End Web Developer",
-    company: "Glazed",
+    company: " Velli",
     description: `Currently working on developing responsive and visually engaging web applications. Collaborating with designers to implement Figma designs into interactive ReactJS components, while refining layouts and styles using Tailwind. Actively involved in optimizing user experience and ensuring cross-browser compatibility.`,
     technologies: ["Figma", "ReactJS", "Tailwind"],
   },
@@ -30,9 +31,7 @@ export const EXPERIENCES = [
     year: "2023 - 2024",
     role: "Junior Videographer",
     company: "Twilight Media",
-    description: `•	Traveled to cover live conventions, providing photography and videography services.
-•	Assisted in setting up live streaming equipment, including Blackmagic cameras and switchers.
-•	Managed live-monitoring and on-the-fly editing during live events to ensure seamless broadcasts.
+    description: `Currently working on developing responsive and visually engaging web applications, designing and implementing Figma designs into interactive ReactJS components, while refining layouts and styles using Tailwind. Actively involved in optimizing user experience and ensuring cross-browser compatibility.
 `,
     technologies: ["Videography", "Live-Editing", "Marketing"],
   },
@@ -59,13 +58,13 @@ export const PROJECTS = [
   },
 
   {
-    title: "Glazed - 2024",
-    image: project2,
-    description: "A freelance front-end web development project for a client, focused on building responsive and user-friendly web applications using ReactJS and Tailwind. Currently collaborating with designers to implement Figma designs and optimize user experience.",
+    title: " Velli - 2024",
+    image: star,
+    description: "A freelance e-commerce web development project in collaboration with a partner. Together, we are responsible for both web design and front-end development, building a responsive and user-friendly website using ReactJS and Tailwind. We are currently working on implementing Figma designs and optimizing the overall user experience.",
     technologies: ["Figma", "ReactJS", "Tailwind"],
+    detailsPage: 'velli',
     
   },
-
   {
     title: "Mini Arcade Game - 2023",
     image: project3,

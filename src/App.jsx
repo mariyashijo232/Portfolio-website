@@ -8,6 +8,7 @@ import Project from './components/project';
 import Contact from './components/contact';
 import Zara from './components/zara'; 
 import Portfolio from './components/portfolio';
+import Velli from './components/velli'
 
 const App = () => {
   const [currentComponent, setCurrentComponent] = useState('home'); 
@@ -21,6 +22,8 @@ const App = () => {
         return <Zara />;
       case 'portfolio':
         return <Portfolio />;
+      case 'velli':
+        return <Velli />;
       // case 'project2':
       //   return <Project2Details />;
       default:
